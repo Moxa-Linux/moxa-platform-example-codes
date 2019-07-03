@@ -1,9 +1,7 @@
-CC:=gcc
-STRIP:=strip
+CC?=gcc
 
 all:
 	$(CC) -o hello hello.c
-	$(STRIP) -s hello
 
 .PHONY: clean
 clean:

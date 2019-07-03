@@ -1,9 +1,7 @@
-CC:=gcc
-STRIP:=strip
+CC?=gcc
 
 all:
 	$(CC) -o rtc-test rtc-test.c
-	$(STRIP) -s rtc-test
 
 .PHONY: clean
 clean:
